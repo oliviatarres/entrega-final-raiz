@@ -1,0 +1,988 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagnóstico de piezas | RAIZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="curso.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+
+  <body class="course-detail-page">
+    <header class="course-page-header">
+      <nav class="navbar navbar--course" aria-label="Navegacion del curso">
+        <a class="brand" href="index.html#inicio" aria-label="RAIZ inicio">
+          <img src="./img/logo-raiz.png" alt="RAIZ" />
+          <span>RAIZ</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#programa">Programa</a></li>
+          <li><a href="#profesores">Profesores</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#inscripcion">Inscripción</a></li>
+
+            <li class="nav-home-mobile">
+    <a href="index.html#inicio">Volver al inicio</a>
+        </ul>
+
+        <a class="nav-cta" href="index.html#inicio">Volver al inicio</a>
+      </nav>
+    </header>
+
+    <main>
+ <section class="course-hero">
+  <div class="course-hero__inner">
+    <div class="course-hero__content">
+      <h1>
+        Diagnóstico<br />
+        de piezas
+      </h1>
+
+      <p class="course-hero__copy course-hero__copy--desktop">
+        Aprendé a evaluar el estado real de una pieza. Identificá daños
+        y riesgos para definir el plan de restauración.
+      </p>
+
+      <p class="course-hero__copy course-hero__copy--mobile">
+  Aprendé a identificar daños para definir <br>el plan de restauración adecuado.
+</p>
+
+      <div class="course-hero__actions">
+        <a
+          class="course-button course-button--dark"
+          href="#inscripcion"
+        >
+          Inscribirme al curso
+        </a>
+
+        <a
+          class="course-button course-button--outline"
+          href="#programa"
+        >
+          Ver programa
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="before-after before-after--hover"
+      aria-label="Antes y después de una pieza restaurada"
+    >
+      <!--
+        Imagen principal:
+        conserva el comportamiento hover en desktop
+        y participa en la animación automática en mobile.
+      -->
+      <img
+        class="before-after__image before-after-hover__image course-piece-image course-piece-image--after"
+        src="./img/pieza-despues.png"
+        data-original="./img/pieza-despues.png"
+        data-aged="./img/pieza-antes.png"
+        alt="Pieza restaurada antes y después de la intervención"
+      />
+
+      <!--
+        Imagen deteriorada:
+        permanece oculta en desktop y solamente
+        se utiliza para el cambio automático en mobile.
+      -->
+      <img
+        class="course-piece-image course-piece-image--before"
+        src="./img/pieza-antes.png"
+        alt="Pieza antes de la restauración"
+      />
+    </div>
+  </div>
+</section>
+
+      <section class="course-program" id="programa">
+        <div class="course-facts" aria-label="Características del curso">
+          <article class="course-fact">
+            <img class="course-fact__icon-img" src="./img/icono-modalidad.png" alt="" aria-hidden="true" />
+            <div>
+              <h3>Modalidad</h3>
+              <p>Clases virtuales</p>
+            </div>
+          </article>
+
+          <article class="course-fact">
+            <img class="course-fact__icon-img" src="./img/icono-clases.png" alt="" aria-hidden="true" />
+            <div>
+              <h3>Clases</h3>
+              <p>4 encuentros</p>
+            </div>
+          </article>
+
+          <article class="course-fact">
+            <img class="course-fact__icon-img" src="./img/icono-horario.png" alt="" aria-hidden="true" />
+            <div>
+              <h3>Horario</h3>
+              <p>Lunes 18-21 hs</p>
+            </div>
+          </article>
+
+          <article class="course-fact">
+            <img class="course-fact__icon-img" src="./img/icono-cupos.png" alt="" aria-hidden="true" />
+            <div>
+              <h3>Cupos</h3>
+              <p>Máx. 10 personas</p>
+            </div>
+          </article>
+        </div>
+
+ <div class="course-section-head">
+  <h2 class="section-title">
+    Contenidos del curso
+  </h2>
+
+  <p class="section-intro course-section-intro--desktop">
+    Un recorrido práctico por cada etapa de restauración. Aprendé a observar una
+    pieza, reconocer sus materiales, diagnosticar daños y tomar decisiones.
+  </p>
+
+  <p class="section-intro course-section-intro--mobile">
+    Un recorrido práctico para observar daños y tomar decisiones.
+  </p>
+</div>
+
+        <div class="course-topics">
+          <article data-number="01">
+            <h3>Materiales</h3>
+            <p>Reconocimiento de maderas, metales, tapizados y acabados.</p>
+          </article>
+
+          <article data-number="02">
+            <h3>Daños</h3>
+            <p>Lectura de marcas, roturas, desgastes y problemas estructurales.</p>
+          </article>
+
+          <article data-number="03">
+            <h3>Criterio</h3>
+            <p>Decisiones previas para intervenir sin borrar la identidad de la pieza.</p>
+          </article>
+
+          <article data-number="04">
+            <h3>Registro</h3>
+            <p>Cómo documentar el estado inicial y planificar el trabajo.</p>
+          </article>
+        </div>
+
+<div class="course-accordion">
+  <details name="course-classes">
+    <summary>
+      <span>Clase 01 – Introducción al diagnóstico</span>
+      <strong>+</strong>
+    </summary>
+
+    <p>
+      Qué significa diagnosticar una pieza antes de intervenirla. Observación inicial,
+      registro del estado general, identificación de señales de desgaste y criterios
+      básicos para decidir cómo avanzar.
+    </p>
+
+    <video
+      class="course-accordion__video"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      aria-label="Vista previa de la clase 1"
+    >
+      <source
+        src="./videos/video-diagnostico.mp4"
+        type="video/mp4"
+      />
+
+      Tu navegador no puede reproducir este video.
+    </video>
+  </details>
+
+  <details name="course-classes">
+  <summary>
+  <span>Clase 02 – Preparación y lijado</span>
+  <strong>+</strong>
+</summary>
+
+<p>
+  Cómo preparar correctamente una superficie antes de intervenirla. Limpieza inicial,
+  elección de lijas, lectura de vetas, eliminación de acabados anteriores
+  y criterios básicos para evitar daños durante el proceso.
+</p>
+
+    <video
+      class="course-accordion__video"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      aria-label="Vista previa de la clase 2"
+    >
+      <source
+        src="./videos/video-lijado.mp4"
+        type="video/mp4"
+      />
+
+      Tu navegador no puede reproducir este video.
+    </video>
+  </details>
+
+  <details name="course-classes">
+  <summary>
+  <span>Clase 03 – Tapizado y renovación</span>
+  <strong>+</strong>
+</summary>
+
+<p>
+  Introducción al proceso de tapizado y renovación de asientos. Retiro del material
+  anterior, revisión del relleno, elección de textiles, tensado parejo y cuidados
+  básicos para lograr una terminación resistente.
+</p>
+
+    <video
+      class="course-accordion__video"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      aria-label="Vista previa de la clase 3"
+    >
+      <source
+        src="./videos/video-tapizado.mp4"
+        type="video/mp4"
+      />
+
+      Tu navegador no puede reproducir este video.
+    </video>
+  </details>
+
+  <details name="course-classes">
+ <summary>
+  <span>Clase 04 – Acabados finales</span>
+  <strong>+</strong>
+</summary>
+
+<p>
+  Cómo proteger y terminar una pieza después de intervenirla. Preparación final de la
+  superficie, elección de productos, aplicación por capas, tiempos de secado y cuidados
+  necesarios para conservar el resultado.
+</p>
+
+    <video
+      class="course-accordion__video"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      aria-label="Vista previa de la clase 4"
+    >
+      <source
+        src="./videos/video-acabado.mp4"
+        type="video/mp4"
+      />
+
+      Tu navegador no puede reproducir este video.
+    </video>
+  </details>
+</div>
+      </section>
+
+
+
+<section class="teacher-hover-section" id="profesores">
+  <div class="course-section-head">
+    <h2 class="section-title">
+      <span class="teacher-title--desktop">
+        Quiénes te acompañan
+      </span>
+
+      <span class="teacher-title--mobile">
+       Tus profesores
+      </span>
+    </h2>
+
+    <p class="section-intro">
+      <span class="teacher-intro--desktop">
+        Un equipo formado desde la experiencia de taller, combinando técnica y
+        sensibilidad para acompañar cada proceso de restauración e intervención.
+      </span>
+
+      <span class="teacher-intro--mobile">
+Un equipo formado para acompañar cada proceso de restauración e intervención.      </span>
+    </p>
+  </div>
+
+  <div class="teacher-hover-grid">
+    <!-- Profesor 01 -->
+    <article class="teacher-hover-card">
+      <img
+        src="./img/profesor-martin.png"
+        alt="Martin Lopez"
+      />
+
+      <span class="teacher-hover-card__number">
+        01
+      </span>
+
+      <span class="teacher-hover-card__tag">
+        Profesor
+      </span>
+
+      <div class="teacher-hover-card__content">
+        <h3>
+          Martin<br />
+          Lopez
+        </h3>
+
+        <p>Tapicería</p>
+
+        <small>
+          Tapicería, diseño industrial y técnicas de restauración aplicada.
+        </small>
+
+        <div class="teacher-hover-card__chips"></div>
+      </div>
+
+      <span
+        class="teacher-hover-card__button"
+        aria-hidden="true"
+      >
+        +
+      </span>
+    </article>
+
+    <!-- Profesora 02 -->
+    <article class="teacher-hover-card">
+      <img
+        src="./img/profesora-julia.png"
+        alt="Julia Moreno"
+      />
+
+      <span class="teacher-hover-card__number">
+        02
+      </span>
+
+      <span class="teacher-hover-card__tag">
+        Profesora
+      </span>
+
+      <div class="teacher-hover-card__content">
+        <h3>
+          Julia<br />
+          Moreno
+        </h3>
+
+        <p>Tapicería</p>
+
+        <small>
+          Textiles, costuras, tapizados y terminaciones finales de la pieza.
+        </small>
+      </div>
+
+      <span
+        class="teacher-hover-card__button"
+        aria-hidden="true"
+      >
+        +
+      </span>
+    </article>
+
+    <!-- Profesora 03 -->
+    <article class="teacher-hover-card">
+      <img
+        src="./img/profesora-fatima.png"
+        alt="Fatima Perez"
+      />
+
+      <span class="teacher-hover-card__number">
+        03
+      </span>
+
+      <span class="teacher-hover-card__tag">
+        Profesora
+      </span>
+
+      <div class="teacher-hover-card__content">
+        <h3>
+          Fatima<br />
+          Perez
+        </h3>
+
+        <p>Diagnóstico</p>
+
+        <small>
+          Análisis de materiales, daños y posibilidades de intervención.
+        </small>
+      </div>
+
+      <span
+        class="teacher-hover-card__button"
+        aria-hidden="true"
+      >
+        +
+      </span>
+    </article>
+
+    <!-- Profesor 04 -->
+    <article class="teacher-hover-card">
+      <img
+        src="./img/profesor-dario.png"
+        alt="Dario Castel"
+      />
+
+      <span class="teacher-hover-card__number">
+        04
+      </span>
+
+      <span class="teacher-hover-card__tag">
+        Profesor
+      </span>
+
+      <div class="teacher-hover-card__content">
+        <h3>
+          Dario<br />
+          Castel
+        </h3>
+
+        <p>Carpintería</p>
+
+        <small>
+          Reparación estructural, ensambles y criterios de restauración.
+        </small>
+      </div>
+
+      <span
+        class="teacher-hover-card__button"
+        aria-hidden="true"
+      >
+        +
+      </span>
+    </article>
+
+    <!-- Profesor 05 -->
+    <article class="teacher-hover-card">
+      <img
+        src="./img/profesor-fernando.png"
+        alt="Mario Lino"
+      />
+
+      <span class="teacher-hover-card__number">
+        05
+      </span>
+
+      <span class="teacher-hover-card__tag">
+        Profesor
+      </span>
+
+      <div class="teacher-hover-card__content">
+        <h3>
+          Mario<br />
+          Lino
+        </h3>
+
+        <p>Terminaciones</p>
+
+        <small>
+          Acabados, protección, detalles finales y criterio de intervención.
+        </small>
+      </div>
+
+      <span
+        class="teacher-hover-card__button"
+        aria-hidden="true"
+      >
+        +
+      </span>
+    </article>
+  </div>
+
+  <!-- Puntos generados automáticamente con JavaScript -->
+  <div
+    class="teacher-hover-pagination"
+    aria-label="Navegación del equipo"
+  ></div>
+</section>
+
+
+
+      <section class="course-enrollment" id="inscripcion">
+     <div class="course-enrollment__head">
+  <h2
+    class="section-title course-enrollment-h1"
+    id="course-title"
+  >
+    <span class="course-enrollment-title--desktop">
+      Aprendé a restaurar desde la práctica
+    </span>
+
+    <span class="course-enrollment-title--mobile">
+      Aprendé a restaurar
+    </span>
+  </h2>
+
+  <p class="section-intro">
+    <span class="course-enrollment-intro--desktop">
+      Accedé a una experiencia completa de aprendizaje con materiales, herramientas
+      y acompañamiento para incorporar técnicas aplicadas desde el taller.
+    </span>
+
+    <span class="course-enrollment-intro--mobile">
+      Materiales, herramientas y acompañamiento para aprender desde el taller.
+    </span>
+  </p>
+</div>
+
+        <div class="course-enrollment__inner course-enrollment__inner--pricing">
+          <div class="course-price-card" id="precios">
+            <span class="course-price-card__label">Curso completo</span>
+            <strong>$89.000</strong>
+
+            <div class="course-price-card__details">
+              <span>Por qué elegirlo</span>
+
+              <article>
+                <h3>4 encuentros</h3>
+                <p>Clases teórico-prácticas</p>
+              </article>
+
+              <article>
+                <h3>Material complementario</h3>
+                <p>Guías, fichas y recursos de consulta</p>
+              </article>
+
+              <article>
+                <h3>Certificado de participación</h3>
+                <p>Constancia digital de asistencia y participación</p>
+              </article>
+            </div>
+
+            <a href="index.html#contacto">Inscribirme ahora</a>
+          </div>
+
+          <div class="course-enrollment__side">
+            <div class="course-benefits">
+              <h2>Qué incluye la experiencia</h2>
+
+              <div class="course-benefits__grid">
+                <article class="course-benefit-card">
+                  <img src="./img/icono-certificado.png" alt="" aria-hidden="true" />
+                  <h3>Certificado</h3>
+                  <p>Recibís una constancia digital de asistencia y participación.</p>
+                </article>
+
+                <article class="course-benefit-card">
+                  <img src="./img/icono-material.png" alt="" aria-hidden="true" />
+                  <h3>Material</h3>
+                  <p>Accedé a guías de observación, fichas y material de consulta.</p>
+                </article>
+
+                <article class="course-benefit-card">
+                  <img src="./img/icono-taller.png" alt="" aria-hidden="true" />
+                  <h3>Taller en vivo</h3>
+                  <p>Cuatro encuentros teórico-prácticos con intercambio y análisis.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="course-payment-block">
+              <p class="section-kicker">MEDIOS DE PAGO</p>
+
+              <div class="course-payment-grid">
+                <article class="course-payment-option">
+                  <span class="course-payment-option__icon">%</span>
+                  <div>
+                    <p>Pago al contado</p>
+                    <strong>20%</strong>
+                    <span>de descuento</span>
+                    <small>Precio final: $71.200</small>
+                  </div>
+                </article>
+
+                <article class="course-payment-option">
+                  <span class="course-payment-option__icon">x6</span>
+                  <div>
+                    <p>Cuotas sin interés</p>
+                    <strong>cuotas</strong>
+                    <span>sin interés</span>
+                    <small>Cuotas de $14.800</small>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+<section class="layers" aria-labelledby="layers-title">
+<div class="layers__head">
+  <h2 class="section-title" id="layers-title">
+    <span class="layers-title--desktop">
+      Anatomía de una pieza
+    </span>
+
+    <span class="layers-title--mobile">
+      La pieza por dentro
+    </span>
+  </h2>
+
+  <p class="section-intro">
+    <span class="layers-intro--desktop">
+      Aprendé a reconocer lo que cada mueble guarda en su interior. Desde la estructura
+      hasta la terminación final, cada capa revela una parte de su historia.
+    </span>
+
+    <span class="layers-intro--mobile">
+      Conocé las capas que construyen un mueble. Desde la estructura
+      hasta la terminación final
+    </span>
+  </p>
+</div>
+
+  <div class="layers__inner">
+    <!-- Navegación de las etapas -->
+    <nav class="layers__nav" aria-label="Etapas de restauración">
+      <button
+        class="layers__button is-active"
+        type="button"
+        data-layer-image="./img/estructura.png"
+        data-layer-alt="Estructura de sillón de madera con uniones originales"
+        data-layer-number="01"
+        data-layer-title="Uniones originales"
+        data-layer-description="Analizamos la estructura para evaluar su estabilidad, reconocer el sistema constructivo y conservar las uniones originales de la pieza."
+        data-layer-material="Madera maciza"
+        data-layer-technique="Encastres y refuerzo"
+        data-layer-details="Estabilidad y uniones originales"
+        data-layer-material-image="./img/material-madera.jpg"
+        data-layer-material-alt="Detalle de madera maciza"
+        data-layer-technique-image="./img/icono-encastre.png"
+        data-layer-technique-alt="Icono de encastre y refuerzo"
+        aria-pressed="true"
+      >
+        <span>01 - Estructura</span>
+        <span class="layers__arrow" aria-hidden="true">›</span>
+      </button>
+
+      <button
+        class="layers__button"
+        type="button"
+        data-layer-image="./img/suspension.png"
+        data-layer-alt="Sillón con sistema de suspensión y cinchas internas"
+        data-layer-number="02"
+        data-layer-title="Soporte invisible"
+        data-layer-description="Recuperamos el sistema interno de apoyo para distribuir el peso correctamente y devolver estabilidad y comodidad a la pieza."
+        data-layer-material="Cinchas de alta resistencia"
+        data-layer-technique="Tensado manual"
+        data-layer-details="Distribución del peso"
+        data-layer-material-image="./img/material-cinchas.png"
+        data-layer-material-alt="Detalle de cinchas de alta resistencia"
+        data-layer-technique-image="./img/icono-tensado.png"
+        data-layer-technique-alt="Icono de tensado manual"
+        aria-pressed="false"
+      >
+        <span>02 - Suspensión</span>
+        <span class="layers__arrow" aria-hidden="true">›</span>
+      </button>
+
+      <button
+        class="layers__button"
+        type="button"
+        data-layer-image="./img/relleno.png"
+        data-layer-alt="Sillón con capas de relleno y volumen reconstruido"
+        data-layer-number="03"
+        data-layer-title="Volumen y confort"
+        data-layer-description="Reconstruimos las capas internas que definen la ergonomía, recuperando el volumen original y la sensación de uso."
+        data-layer-material="Espuma de alta densidad"
+        data-layer-technique="Modelado por capas"
+        data-layer-details="Confort y proporción"
+        data-layer-material-image="./img/material-espuma.png"
+        data-layer-material-alt="Detalle de espuma de alta densidad"
+        data-layer-technique-image="./img/icono-modelado.png"
+        data-layer-technique-alt="Icono de modelado por capas"
+        aria-pressed="false"
+      >
+        <span>03 - Relleno</span>
+        <span class="layers__arrow" aria-hidden="true">›</span>
+      </button>
+
+      <button
+        class="layers__button"
+        type="button"
+        data-layer-image="./img/terminacion.png"
+        data-layer-alt="Sillón terminado con revestimiento de cuero natural"
+        data-layer-number="04"
+        data-layer-title="Nueva superficie"
+        data-layer-description="Aplicamos el revestimiento final cuidando costuras, tensiones y detalles que mantienen el carácter original de la pieza."
+        data-layer-material="Cuero natural"
+        data-layer-technique="Costura artesanal"
+        data-layer-details="Terminación y textura"
+        data-layer-material-image="./img/material-cuero.png"
+        data-layer-material-alt="Detalle de cuero natural"
+        data-layer-technique-image="./img/icono-costura.png"
+        data-layer-technique-alt="Icono de costura artesanal"
+        aria-pressed="false"
+      >
+        <span>04 - Terminación</span>
+        <span class="layers__arrow" aria-hidden="true">›</span>
+      </button>
+    </nav>
+
+    <!-- Imagen principal de la pieza -->
+    <div class="layers__media" aria-live="polite">
+      <img
+        class="layers__image"
+        src="./img/estructura.png"
+        alt="Estructura de sillón de madera con uniones originales"
+        data-layers-image
+      />
+    </div>
+
+    <!-- Información de la etapa -->
+    <article class="layers__info" aria-live="polite">
+      <span class="layers__number" data-layers-number>
+        01
+      </span>
+
+      <h3 class="layers__heading" data-layers-title>
+        Uniones originales
+      </h3>
+
+      <p class="layers__copy" data-layers-description>
+        Analizamos la estructura para evaluar su estabilidad, reconocer el sistema
+        constructivo y conservar las uniones originales de la pieza.
+      </p>
+
+      <div class="layers__facts">
+        <!-- Material -->
+        <div class="layers__fact">
+          <span class="layers__fact-icon layers__fact-icon--material">
+            <img
+              src="./img/material-madera.jpg"
+              alt="Detalle de madera maciza"
+              data-layers-material-image
+            />
+          </span>
+
+          <div>
+            <span class="layers__fact-label">
+              Material
+            </span>
+
+            <span
+              class="layers__fact-value"
+              data-layers-material
+            >
+              Madera maciza
+            </span>
+          </div>
+        </div>
+
+        <!-- Técnica -->
+        <div class="layers__fact">
+          <span class="layers__fact-icon layers__fact-icon--technique">
+            <img
+              src="./img/icono-encastre.svg"
+              alt="Icono de encastre y refuerzo"
+              data-layers-technique-image
+            />
+          </span>
+
+          <div>
+            <span class="layers__fact-label">
+              Técnica
+            </span>
+
+            <span
+              class="layers__fact-value"
+              data-layers-technique
+            >
+              Encastres y refuerzo
+            </span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+      
+
+
+
+<section class="related-courses">
+  <div class="course-section-head">
+    <h2 class="section-title">Cursos relacionados</h2>
+ <p class="section-intro">
+  <span class="related-intro--desktop">
+    Seguí explorando nuevos recorridos para profundizar técnicas, descubrir materiales
+    y seguir desarrollando una mirada propia sobre cada pieza.
+  </span>
+
+  <span class="related-intro--mobile">
+    Seguí explorando técnicas, materiales y nuevas formas de intervenir cada pieza.
+  </span>
+</p>
+  </div>
+
+  <div class="related-courses__home-grid">
+    <article class="course-card">
+      <div class="course-card__media course-card__media--blue">
+        <img class="course-card__image" src="./img/curso-diagnostico.png" alt="Reparación estructural" />
+      </div>
+
+      <div class="course-card__body">
+        <h3 class="course-card__title">Reparación estructural</h3>
+        <p class="course-card__description">
+          Materiales, estructura, daños <br />
+          y criterios de intervención.
+        </p>
+        <p class="course-card__price">$55.000</p>
+
+        <div class="course-card__chips" aria-label="Información del curso">
+          <span>Básico</span>
+          <span>6 encuentros</span>
+          <span>Presencial</span>
+        </div>
+
+        <a class="course-card__button" href="#">Ver curso</a>
+      </div>
+    </article>
+
+    <article class="course-card">
+      <div class="course-card__media course-card__media--yellow">
+        <img class="course-card__image" src="./img/curso-rediseno.png" alt="Rediseño estético" />
+      </div>
+
+      <div class="course-card__body">
+        <h3 class="course-card__title">Rediseño estético</h3>
+        <p class="course-card__description">
+          Terminaciones, color, tapicería <br />
+          y actualización visual.
+        </p>
+        <p class="course-card__price">$89.000</p>
+
+        <div class="course-card__chips" aria-label="Información del curso">
+          <span>Avanzado</span>
+          <span>8 encuentros</span>
+          <span>Online</span>
+        </div>
+
+        <a class="course-card__button" href="#">Ver curso</a>
+      </div>
+    </article>
+
+    <article class="course-card">
+      <div class="course-card__media course-card__media--green">
+        <img class="course-card__image" src="./img/curso-acabados.png" alt="Conservación de acabados" />
+      </div>
+
+      <div class="course-card__body">
+        <h3 class="course-card__title">Maderas y acabados</h3>
+        <p class="course-card__description">
+          Limpieza, protección, pátinas <br />
+          y cuidado de superficies.
+        </p>
+        <p class="course-card__price">$105.000</p>
+
+        <div class="course-card__chips" aria-label="Información del curso">
+          <span>Intermedio</span>
+          <span>5 encuentros</span>
+          <span>Presencial</span>
+        </div>
+
+        <a class="course-card__button" href="#">Ver curso</a>
+      </div>
+    </article>
+  </div>
+  <div
+  class="related-courses__pagination"
+  aria-label="Navegación de cursos relacionados"
+></div>
+</section>
+
+    </main>
+
+
+
+
+   
+            <footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="site-footer__logo" href="#inicio" aria-label="RAIZ inicio">
+          <img src="./img/logo-raiz-blanco.png" alt="RAIZ" />
+        </a>        <p>Restauramos muebles de diseño. Recuperamos su esencia, respetamos su historia.</p>
+        <a class="site-footer__link" href="#sobre-nosotros">Sobre Nosotros →</a>
+      <div class="site-footer__social">
+  <a
+    href="#"
+    aria-label="Instagram"
+  >
+    <img
+      src="./img/instagram.png"
+      alt=""
+      aria-hidden="true"
+    />
+  </a>
+
+  <a
+    href="#"
+    aria-label="WhatsApp"
+  >
+    <img
+      src="./img/whatsapp.png"
+      alt=""
+      aria-hidden="true"
+    />
+  </a>
+</div>
+      </div>
+
+      <div class="site-footer__column">
+        <h3>NAVEGACIÓN</h3>
+             <a class="biblioteca" href="./biblioteca.html">Biblioteca UI</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#historia">Historia del Diseño</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="site-footer__column">
+        <h3>SERVICIOS</h3>
+        <a href="#contacto">Restauración integral</a>
+        <a href="#contacto">Rediseño estético</a>
+        <a href="#contacto">Reparación estructural</a>
+        <a href="#cursos">Cursos y workshops</a>
+      </div>
+
+    
+    </div>
+
+    <div class="site-footer__bottom">
+      <p>© 2024 Raíz · Todos los derechos reservados</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

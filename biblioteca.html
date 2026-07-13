@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Biblioteca de componentes y estilos del sitio Raíz." />
+    <title>Biblioteca UI | Raíz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&amp;family=Inter:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="biblioteca.css" />
+  </head>
+
+  <body>
+    <header class="library-nav">
+      <a class="library-brand" href="index.html" aria-label="Volver al sitio Raíz">
+        <img src="./img/logo-raiz.png" alt="Raíz" />
+      </a>
+      <button class="library-nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="library-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="library-menu" aria-label="Secciones de la biblioteca">
+        <a href="#colores">Colores</a>
+        <a href="#tipografia">Tipografía</a>
+        <a href="#acciones">Acciones</a>
+        <a href="#campos">Campos</a>
+        <a href="#iconos">Íconos</a>
+        <a href="#cards">Cards</a>
+        <a href="#elementos-ui">Elementos UI</a>
+        <a class="library-nav__mobile-back" href="index.html">Volver al inicio</a>
+      </nav>
+      <a class="library-back" href="index.html">Volver al sitio</a>
+    </header>
+
+    <main>
+      <section class="library-hero" id="inicio">
+        <span class="library-eyebrow">Biblioteca UI · Raíz</span>
+        <h1>Sistema<br />de diseño</h1>
+        <p>Colores, tipografías y componentes reales utilizados en la experiencia digital de Raíz.</p>
+        <a class="library-scroll" href="#colores" aria-label="Ir a colores">↓</a>
+      </section>
+
+      <section class="library-section" id="colores">
+        <aside class="library-section__label">
+          <strong>01</strong>
+          <h2>Colores</h2>
+          <p>Paleta principal y familias cromáticas del sitio.</p>
+        </aside>
+
+        <div class="library-section__content">
+          <div class="color-grid">
+            <article style="--color:#050505;--text:#fff"><i></i><h3>Negro raíz</h3><code>#050505</code><p>Paneles, texto y acciones principales.</p></article>
+            <article style="--color:#ffffff;--text:#050505"><i></i><h3>Blanco</h3><code>#FFFFFF</code><p>Fondos y contraste.</p></article>
+            <article style="--color:#f8f4f0;--text:#050505"><i></i><h3>Blanco cálido</h3><code>#F8F4F0</code><p>Cards y superficies suaves.</p></article>
+            <article style="--color:#b92d26;--text:#fff"><i></i><h3>Rojo Raíz</h3><code>#B92D26</code><p>Estados activos y acentos.</p></article>
+            <article style="--color:#f8cbe0;--text:#050505"><i></i><h3>Rosa</h3><code>#F8CBE0</code><p>Topics, cursos y precios.</p></article>
+            <article style="--color:#93bbf5;--text:#050505"><i></i><h3>Azul</h3><code>#93BBF5</code><p>Contenido técnico.</p></article>
+            <article style="--color:#f7e98b;--text:#050505"><i></i><h3>Amarillo</h3><code>#F7E98B</code><p>Curso y energía.</p></article>
+            <article style="--color:#789171;--text:#050505"><i></i><h3>Verde taller</h3><code>#789171</code><p>Materia e historia.</p></article>
+            <article style="--color:#411612;--text:#fff"><i></i><h3>Marrón</h3><code>#411612</code><p>Madera y fondos visuales.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="library-section" id="tipografia">
+        <aside class="library-section__label">
+          <strong>02</strong>
+          <h2>Tipografía</h2>
+          <p>Jerarquías y voces utilizadas.</p>
+        </aside>
+
+        <div class="library-section__content type-specimens">
+          <article class="font-family-card">
+            <span>Principal</span>
+            <div><strong class="font-cal">Aa</strong><h3>Cal Sans</h3></div>
+            <p>Títulos, nombres, precios y mensajes de alto impacto.</p>
+            <small>ABCDEFGHIJKLMNÑOPQRSTUVWXYZ · 0123456789</small>
+          </article>
+          <article class="font-family-card">
+            <span>Funcional</span>
+            <div><strong class="font-jakarta">Aa</strong><h3>Plus Jakarta Sans</h3></div>
+            <p>Textos, labels, navegación, formularios y componentes UI.</p>
+            <small>ABCDEFGHIJKLMNÑOPQRSTUVWXYZ · 0123456789</small>
+          </article>
+
+          <div class="type-scale">
+            <article><code>Hero · Cal Sans 500</code><p class="type-hero">Devolverlas a sus raíces</p></article>
+            <article><code>Section · Cal Sans 500</code><p class="type-section">Diseño recuperado</p></article>
+            <article><code>Card · Cal Sans 500</code><p class="type-card">Reparación estructural</p></article>
+            <article><code>Body · Plus Jakarta Sans 500</code><p class="type-body">Restauramos muebles de diseño respetando su historia y materialidad.</p></article>
+            <article><code>Label · Plus Jakarta Sans 800</code><p class="type-label">Material · madera recuperada</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="library-section" id="acciones">
+        <aside class="library-section__label">
+          <strong>03</strong>
+          <h2>Acciones</h2>
+          <p>Botones y estados interactivos reales.</p>
+        </aside>
+
+        <div class="library-section__content showcase-panel">
+          <div class="component-row">
+            <a class="demo-button demo-button--dark" href="#">Conocer más</a>
+            <a class="demo-button demo-button--outline" href="#">Ver programa</a>
+            <a class="demo-button demo-button--red" href="#">Inscribirme</a>
+          </div>
+          <div class="hover-demo">
+            <div><span>Reposo</span><a class="fill-button fill-button--static" href="#">Ver curso</a></div>
+            <span class="hover-arrow"></span>
+            <div><span>Hover</span><a class="fill-button is-preview" href="#">Ver curso</a></div>
+          </div>
+          <details class="demo-accordion">
+            <summary><span>Clase 01 – Introducción al diagnóstico</span><b>+</b></summary>
+            <p>Observación inicial, registro del estado y criterios para decidir cómo avanzar.</p>
+            <video class="demo-accordion__video" muted loop playsinline preload="metadata" aria-label="Vista previa de la clase de diagnóstico">
+              <source src="./videos/video-diagnostico.mp4" type="video/mp4" />
+              Tu navegador no puede reproducir este video.
+            </video>
+          </details>
+        </div>
+      </section>
+
+      <section class="library-section" id="campos">
+        <aside class="library-section__label">
+          <strong>04</strong>
+          <h2>Campos</h2>
+          <p>Entradas y selecciones del formulario.</p>
+        </aside>
+
+        <div class="library-section__content showcase-panel">
+          <form class="fields-demo" action="#" onsubmit="return false">
+            <label><span>Nombre completo</span><input type="text" placeholder="Escribí tu nombre" /></label>
+            <label><span>Email</span><input type="email" placeholder="nombre@email.com" /></label>
+            <label class="field-wide"><span>Mensaje</span><textarea placeholder="Contanos más sobre tu pieza o proyecto..."></textarea></label>
+            <fieldset class="field-wide">
+              <legend>¿Qué necesitás?</legend>
+              <div class="option-buttons">
+                <button class="is-selected" type="button">Restauración integral</button>
+                <button type="button">Rediseño estético</button>
+                <button type="button">Reparación estructural</button>
+                <button type="button">Consultas sobre cursos</button>
+              </div>
+            </fieldset>
+            <button class="fields-submit field-wide" type="submit">Enviar consulta</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="library-section" id="iconos">
+        <aside class="library-section__label">
+          <strong>05</strong>
+          <h2>Íconos</h2>
+          <p>Set funcional y recursos circulares.</p>
+        </aside>
+
+        <div class="library-section__content showcase-panel">
+          <div class="icon-grid">
+            <article><img src="./img/icono-modalidad.png" alt="" /><span>Modalidad</span></article>
+            <article><img src="./img/icono-clases.png" alt="" /><span>Clases</span></article>
+            <article><img src="./img/icono-horario.png" alt="" /><span>Horario</span></article>
+            <article><img src="./img/icono-cupos.png" alt="" /><span>Cupos</span></article>
+            <article><img src="./img/icon-restauracion.png" alt="" /><span>Restauración</span></article>
+            <article><img src="./img/icon-rediseno.png" alt="" /><span>Rediseño</span></article>
+            <article><img src="./img/icon-reparacion.png" alt="" /><span>Reparación</span></article>
+            <article><img src="./img/icon-cursos.png" alt="" /><span>Cursos</span></article>
+            <article><img src="./img/icono-encastre.png" alt="" /><span>Encastre</span></article>
+            <article><img src="./img/icono-tensado.png" alt="" /><span>Tensado</span></article>
+            <article><img src="./img/icono-modelado.png" alt="" /><span>Modelado</span></article>
+            <article><img src="./img/icono-costura.png" alt="" /><span>Costura</span></article>
+            <article><span class="material-mask"><img src="./img/material-madera.jpg" alt="" /></span><span>Material</span></article>
+            <article><span class="plus-icon">+</span><span>Abrir</span></article>
+            <article><span class="arrow-icon">›</span><span>Siguiente</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="library-section library-section--cards" id="cards">
+        <aside class="library-section__label">
+          <strong>06</strong>
+          <h2>Cards</h2>
+          <p>Tarjetas reales del home y del detalle.</p>
+        </aside>
+
+        <div class="library-section__content card-showcase">
+          <article class="specimen specimen--course">
+            <header><span>Curso</span><code>.course-card</code></header>
+            <div class="real-course-card">
+              <div class="real-course-card__media">
+                <img src="./img/curso-diagnostico.png" alt="Curso de reparación estructural" />
+              </div>
+              <div class="real-course-card__body">
+                <h3>Reparación estructural</h3>
+                <p>Materiales, estructura, daños y criterios de intervención.</p>
+                <strong>$55.000</strong>
+                <div><span>Inicial</span><span>4 encuentros</span><span>Presencial</span></div>
+                <a href="#">Ver curso</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="specimen">
+            <header><span>Contenido</span><code>.course-topics article</code></header>
+            <div class="real-topic-card" data-number="01">
+              <h3>Materiales</h3>
+              <p>Reconocimiento de maderas, metales, tapizados y acabados.</p>
+            </div>
+          </article>
+
+          <article class="specimen">
+            <header><span>Proyecto</span><code>.project-card</code></header>
+            <div class="library-project-card project-card--pink">
+              <div class="library-project-card__inner">
+                <div class="library-project-card__face library-project-card__face--front">
+                  <span>01</span>
+                  <img src="./img/proyecto-01.png" alt="Mesa lateral restaurada" />
+                  <button class="library-project-card__button" type="button" aria-expanded="false">Ver proyecto</button>
+                </div>
+                <div class="library-project-card__face library-project-card__face--back">
+                  <span>01</span>
+                  <div>
+                    <h3>Mesa lateral restaurada</h3>
+                    <p>Recuperamos la superficie de madera y respetamos la línea original de la pieza.</p>
+                    <small>Madera · Pulido · Terminación natural</small>
+                  </div>
+                  <button class="library-project-card__back" type="button">Volver</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="specimen">
+            <header><span>Mueble cápsula</span><code>.mueble-tile</code></header>
+            <article class="library-capsule-card" tabindex="0" role="button" aria-label="Revelar sofá recuperado" aria-pressed="false">
+              <div class="library-capsule-card__inner">
+                <div class="library-capsule-card__face library-capsule-card__face--front">
+                  <img src="./img/testimonio-sofa.png" alt="Silueta de sofá" />
+                </div>
+                <div class="library-capsule-card__face library-capsule-card__face--back">
+                  <img src="./img/testimonio-sofa-hover.png" alt="Sofá construido con piezas recuperadas" />
+                  <div><strong>Sofá Raíz 01</strong><small>Madera recuperada · Tapizado natural</small></div>
+                </div>
+              </div>
+            </article>
+          </article>
+
+          <article class="specimen specimen--wide">
+            <header><span>Historia</span><code>.timeline-panel</code></header>
+            <div class="history-accordion history-accordion--specimen" aria-label="Ejemplo de línea de tiempo">
+              <article class="timeline-panel is-active">
+                <button class="timeline-panel__button" type="button" aria-expanded="true"><span class="timeline-panel__year">1958</span></button>
+                <span class="timeline-panel__active-year">1958</span>
+                <div class="timeline-panel__content">
+                  <div class="timeline-panel__copy">
+                    <span class="timeline-panel__number">01/05</span>
+                    <h3 class="timeline-panel__title">Egg</h3>
+                    <p class="timeline-panel__meta">Arne Jacobsen · 1958</p>
+                    <p class="timeline-panel__text">Diseñada para envolver el cuerpo y generar una sensación de refugio, transformó el sillón tradicional en una pieza escultórica.</p>
+                    <a class="timeline-panel__cta" href="#">Ver más detalles</a>
+                  </div>
+                  <img class="timeline-panel__image" src="./img/historia-egg.png" alt="Sillón Egg" />
+                </div>
+              </article>
+              <article class="timeline-panel">
+                <button class="timeline-panel__button" type="button" aria-expanded="false"><span class="timeline-panel__year">1963</span></button>
+                <span class="timeline-panel__active-year">1963</span>
+                <div class="timeline-panel__content"><div class="timeline-panel__copy"><span class="timeline-panel__number">02/05</span><h3 class="timeline-panel__title">Ball</h3><p class="timeline-panel__meta">Eero Aarnio · 1963</p><p class="timeline-panel__text">Inspirada en la estética espacial de los años sesenta, convirtió un asiento en una cápsula personal.</p><a class="timeline-panel__cta" href="#">Ver más detalles</a></div><img class="timeline-panel__image" src="./img/historia-ball.png" alt="Sillón Ball" /></div>
+              </article>
+              <article class="timeline-panel">
+                <button class="timeline-panel__button" type="button" aria-expanded="false"><span class="timeline-panel__year">1970</span></button>
+                <span class="timeline-panel__active-year">1970</span>
+                <div class="timeline-panel__content"><div class="timeline-panel__copy"><span class="timeline-panel__number">03/05</span><h3 class="timeline-panel__title">UP5</h3><p class="timeline-panel__meta">Gaetano Pesce · 1970</p><p class="timeline-panel__text">Una pieza expresiva de formas orgánicas que convirtió al diseño en un medio para comunicar emociones.</p><a class="timeline-panel__cta" href="#">Ver más detalles</a></div><img class="timeline-panel__image" src="./img/historia-up.png" alt="Sillón UP5" /></div>
+              </article>
+              <article class="timeline-panel">
+                <button class="timeline-panel__button" type="button" aria-expanded="false"><span class="timeline-panel__year">1984</span></button>
+                <span class="timeline-panel__active-year">1984</span>
+                <div class="timeline-panel__content"><div class="timeline-panel__copy"><span class="timeline-panel__number">04/05</span><h3 class="timeline-panel__title">Ekstrem</h3><p class="timeline-panel__meta">Terje Ekstrøm · 1984</p><p class="timeline-panel__text">Su forma continua expandió los límites entre objeto funcional y pieza visual.</p><a class="timeline-panel__cta" href="#">Ver más detalles</a></div><img class="timeline-panel__image" src="./img/historia-ekstrem.png" alt="Sillón Ekstrem" /></div>
+              </article>
+              <article class="timeline-panel">
+                <button class="timeline-panel__button" type="button" aria-expanded="false"><span class="timeline-panel__year">1993</span></button>
+                <span class="timeline-panel__active-year">1993</span>
+                <div class="timeline-panel__content"><div class="timeline-panel__copy"><span class="timeline-panel__number">05/05</span><h3 class="timeline-panel__title">Vermelha</h3><p class="timeline-panel__meta">Humberto Campana · 1993</p><p class="timeline-panel__text">Una trama manual de cuerda transformó un material cotidiano en una pieza de diseño.</p><a class="timeline-panel__cta" href="#">Ver más detalles</a></div><img class="timeline-panel__image" src="./img/historia-vermelha.png" alt="Silla Vermelha" /></div>
+              </article>
+            </div>
+          </article>
+
+          <article class="specimen">
+            <header><span>Precio</span><code>.course-price-card</code></header>
+            <article class="library-price-card">
+              <span class="library-price-card__label">Curso completo</span>
+              <strong>$89.000</strong>
+              <div class="library-price-card__details">
+                <span>Por qué elegirlo</span>
+                <article><h3>4 encuentros</h3><p>Clases teórico-prácticas</p></article>
+                <article><h3>Material complementario</h3><p>Guías, fichas y recursos de consulta</p></article>
+                <article><h3>Certificado de participación</h3><p>Constancia digital de asistencia y participación</p></article>
+              </div>
+              <a href="#">Inscribirme ahora</a>
+            </article>
+          </article>
+
+          <article class="specimen">
+            <header><span>Testimonio</span><code>.testimonial-slide</code></header>
+            <blockquote class="real-testimonial-card">
+              <span>“</span><span>”</span>
+              <div class="furniture-mark" aria-hidden="true"></div>
+              <p>La silla conservó su historia, pero volvió a sentirse actual. El trabajo fue delicado y muy cuidado.</p>
+              <footer><strong>Martín Ramirez</strong><small>Reparación estructural</small></footer>
+            </blockquote>
+          </article>
+
+          <article class="specimen">
+            <header><span>Profesor</span><code>.teacher-hover-card</code></header>
+            <div class="real-teacher-card">
+              <img src="./img/profesor-martin.png" alt="Martín López" />
+              <span>01</span>
+              <div><h3>Martín<br />López</h3><p>Tapicería</p><small>Tapicería, diseño industrial y técnicas de restauración aplicada.</small></div>
+            </div>
+          </article>
+
+          <article class="specimen specimen--wide">
+            <header><span>Características</span><code>.course-facts</code></header>
+            <div class="real-facts">
+              <article><img src="./img/icono-modalidad.png" alt="" /><div><h3>Modalidad</h3><p>Clases virtuales</p></div></article>
+              <article><img src="./img/icono-clases.png" alt="" /><div><h3>Clases</h3><p>4 encuentros</p></div></article>
+              <article><img src="./img/icono-horario.png" alt="" /><div><h3>Horario</h3><p>Lunes 18–21 hs</p></div></article>
+              <article><img src="./img/icono-cupos.png" alt="" /><div><h3>Cupos</h3><p>Máx. 10 personas</p></div></article>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="library-section" id="elementos-ui">
+        <aside class="library-section__label">
+          <strong>07</strong>
+          <h2>Elementos UI</h2>
+          <p>Etiquetas, paginación y recursos de navegación.</p>
+        </aside>
+
+        <div class="library-section__content showcase-panel ui-elements">
+          <article><h3>Chips</h3><div class="chip-row"><span>Inicial</span><span>4 encuentros</span><span>Presencial</span><span class="is-dark">Más elegido</span></div></article>
+          <article><h3>Paginación</h3><div class="demo-dots"><button class="is-active"></button><button></button><button></button></div></article>
+          <article><h3>Controles</h3><div class="round-controls"><button>‹</button><button class="is-dark">›</button><button>+</button><button class="is-red">×</button></div></article>
+          <article><h3>Números</h3><div class="number-row"><strong>01</strong><strong>04</strong><strong>1958</strong></div></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="library-footer">
+      <div><img src="./img/logo-raiz-blanco.png" alt="Raíz" /><p>Biblioteca de estilos y componentes.</p></div>
+      <a href="#inicio" aria-label="Volver arriba">↑</a>
+    </footer>
+
+    <script>
+      const libraryNavToggle = document.querySelector('.library-nav-toggle');
+      const libraryMenu = document.querySelector('#library-menu');
+
+      const closeLibraryMenu = () => {
+        libraryMenu?.classList.remove('is-open');
+        libraryNavToggle?.setAttribute('aria-expanded', 'false');
+        libraryNavToggle?.setAttribute('aria-label', 'Abrir menú');
+      };
+
+      libraryNavToggle?.addEventListener('click', () => {
+        const isOpen = libraryMenu?.classList.toggle('is-open');
+        libraryNavToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        libraryNavToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+      });
+
+      libraryMenu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeLibraryMenu));
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeLibraryMenu();
+      });
+
+      document.querySelectorAll('.option-buttons button').forEach((button) => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('.option-buttons button').forEach((item) => item.classList.toggle('is-selected', item === button));
+        });
+      });
+      document.querySelectorAll('.demo-dots button').forEach((button) => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('.demo-dots button').forEach((item) => item.classList.toggle('is-active', item === button));
+        });
+      });
+
+      const timelinePanels = Array.from(document.querySelectorAll('.history-accordion--specimen .timeline-panel'));
+      const updateTimeline = (activeIndex) => {
+        timelinePanels.forEach((panel, index) => {
+          panel.classList.toggle('is-active', index === activeIndex);
+          panel.classList.toggle('is-before', index < activeIndex);
+          panel.classList.toggle('is-after', index > activeIndex);
+          panel.querySelector('.timeline-panel__button')?.setAttribute('aria-expanded', index === activeIndex ? 'true' : 'false');
+        });
+      };
+      timelinePanels.forEach((panel, index) => panel.querySelector('.timeline-panel__button')?.addEventListener('click', () => updateTimeline(index)));
+      if (timelinePanels.length) updateTimeline(0);
+
+      document.querySelectorAll('.demo-accordion').forEach((details) => {
+        const video = details.querySelector('video');
+        if (!video) return;
+
+        details.addEventListener('toggle', () => {
+          if (details.open) {
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+            video.currentTime = 0;
+          }
+        });
+      });
+
+      document.querySelectorAll('.library-project-card').forEach((card) => {
+        const openButton = card.querySelector('.library-project-card__button');
+        const closeButton = card.querySelector('.library-project-card__back');
+
+        openButton?.addEventListener('click', () => {
+          card.classList.add('is-flipped');
+          openButton.setAttribute('aria-expanded', 'true');
+        });
+
+        closeButton?.addEventListener('click', () => {
+          card.classList.remove('is-flipped');
+          openButton?.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      document.querySelectorAll('.library-capsule-card').forEach((card) => {
+        const toggleCard = () => {
+          const isFlipped = card.classList.toggle('is-flipped');
+          card.setAttribute('aria-pressed', isFlipped ? 'true' : 'false');
+        };
+
+        card.addEventListener('click', toggleCard);
+        card.addEventListener('keydown', (event) => {
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+          event.preventDefault();
+          toggleCard();
+        });
+      });
+    </script>
+  </body>
+</html>
