@@ -5242,3 +5242,36 @@ html.reveal-motion .scroll-reveal.is-revealed {
     padding-inline: 0.5rem;
   }
 }
+
+/* =========================================
+   HISTORY HOME — CORRECCIÓN PARA iOS
+   ========================================= */
+
+.history .timeline-panel__button,
+.history .timeline-panel__button:hover,
+.history .timeline-panel__button:focus,
+.history .timeline-panel__button:active {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #050505 !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  -webkit-text-fill-color: #050505 !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Años de las pestañas */
+.history .timeline-panel__year {
+  color: #050505 !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-weight: 800;
+  -webkit-text-fill-color: #050505 !important;
+}
+
+/* Año de la pestaña abierta */
+.history .timeline-panel.is-active .timeline-panel__year,
+.history .timeline-panel__active-year {
+  color: #c52f28 !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-weight: 800;
+  -webkit-text-fill-color: #c52f28 !important;
+}

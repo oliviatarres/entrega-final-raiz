@@ -363,3 +363,67 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 .arrow-icon::before {
   transform: translate(.03rem,-.16rem);
 }
+
+/* =========================================
+   CORRECCIÓN DE COLORES EN iOS
+   ========================================= */
+
+/* Años inactivos del historial */
+.history-accordion--specimen .timeline-panel__button,
+.history-accordion--specimen .timeline-panel__button:hover,
+.history-accordion--specimen .timeline-panel__button:focus,
+.history-accordion--specimen .timeline-panel__button:active,
+.history-accordion--specimen .timeline-panel__year {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #050505 !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  -webkit-text-fill-color: #050505 !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Año activo en rojo */
+.history-accordion--specimen .timeline-panel__active-year {
+  color: #b92d26 !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  -webkit-text-fill-color: #b92d26 !important;
+}
+
+/* Botones circulares blancos */
+.round-controls button {
+  appearance: none;
+  -webkit-appearance: none;
+  color: #050505 !important;
+  background-color: transparent !important;
+  -webkit-text-fill-color: #050505 !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Botón negro */
+.round-controls button.is-dark {
+  border-color: #050505 !important;
+  background-color: #050505 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+/* Botón rojo */
+.round-controls button.is-red {
+  border-color: #b92d26 !important;
+  background-color: #b92d26 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+/* Iconos de la sección de iconos */
+.icon-grid .plus-icon {
+  background-color: #050505 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.icon-grid .arrow-icon {
+  background-color: #b92d26 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
